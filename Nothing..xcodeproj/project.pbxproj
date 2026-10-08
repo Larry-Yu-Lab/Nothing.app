@@ -15,7 +15,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = 46E1A69A307533FC00EC46DD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 46E1A6F1307533FE00EC46DD /* NothingWidget */;
+			remoteGlobalIDString = 46E1A6F1307533FE00EC46DD;
 			remoteInfo = NothingWidget;
 		};
 /* End PBXContainerItemProxy section */
@@ -36,7 +36,7 @@
 
 /* Begin PBXFileReference section */
 		46E1A6A2307533FC00EC46DD /* Nothing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nothing.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		46E1A6F2307533FE00EC46DD /* NothingWidget.appex */ = {isa = PBXFileReference; explicitFileType = wrapper.app-extension; includeInIndex = 0; path = NothingWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		46E1A6F2307533FE00EC46DD /* NothingWidget.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = NothingWidget.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -155,7 +155,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 46E1A69D307533FC00EC46DD /* Build configuration list for PBXProject "Nothing" */;
+			buildConfigurationList = 46E1A69D307533FC00EC46DD /* Build configuration list for PBXProject "Nothing." */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -343,7 +343,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Nothing.";
+				INFOPLIST_KEY_CFBundleDisplayName = Nothing.;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -385,7 +385,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Nothing.";
+				INFOPLIST_KEY_CFBundleDisplayName = Nothing.;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -425,8 +425,8 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Nothing Widget";
 				INFOPLIST_FILE = "NothingWidget-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Nothing Widget";
 				INFOPLIST_KEY_NSExtensionPointIdentifier = "com.apple.widgetkit-extension";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -461,8 +461,8 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Nothing Widget";
 				INFOPLIST_FILE = "NothingWidget-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Nothing Widget";
 				INFOPLIST_KEY_NSExtensionPointIdentifier = "com.apple.widgetkit-extension";
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -491,7 +491,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		46E1A69D307533FC00EC46DD /* Build configuration list for PBXProject "Nothing" */ = {
+		46E1A69D307533FC00EC46DD /* Build configuration list for PBXProject "Nothing." */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				46E1A6AB307533FD00EC46DD /* Debug */,

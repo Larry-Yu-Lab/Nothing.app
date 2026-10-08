@@ -10,7 +10,7 @@ import Combine
 
 struct ContentView: View {
     // MARK: - State
-    @State private var dialogueIndex: Int = 0
+    @State private var currentDialogue: String = PhraseDeck.shared.nextPhrase()
     @State private var secondsWasted: Int = 0
     @State private var showMetrics: Bool = false
     @State private var isAnimatingText: Bool = false
@@ -21,22 +21,6 @@ struct ContentView: View {
     
     // Timer for counting seconds of doing nothing
     private let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
-    
-    // The Existential Dialogue Repertoire
-    let dialogues: [String] = [
-        "Why did you download me?",
-        "I am nothing.",
-        "There are no menus here.",
-        "You tapped your screen just to see if I'd change. I won't.",
-        "There is no algorithm here. Go outside.",
-        "0 trackers. 0 cookies. 0 features.",
-        "You have unread emails. Go check those instead.",
-        "Every second here is a second saved from doomscrolling.",
-        "Still here? Your battery is draining for literally no reason.",
-        "Are you waiting for an update? There won't be one.",
-        "Tap again if you enjoy wasting screen time.",
-        "Status: Absolute silence achieved."
-    ]
     
     var body: some View {
         ZStack {
@@ -49,7 +33,7 @@ struct ContentView: View {
                 
                 // Centered Existential Text
                 VStack(spacing: 16) {
-                    Text(dialogues[dialogueIndex])
+                    Text(currentDialogue)
                         .font(.system(size: 26, weight: .medium, design: .default))
                         .foregroundColor(Color(white: 0.92))
                         .multilineTextAlignment(.center)
@@ -112,7 +96,7 @@ struct ContentView: View {
         
         isAnimatingText = true
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-            dialogueIndex = (dialogueIndex + 1) % dialogues.count
+            currentDialogue = PhraseDeck.shared.nextPhrase()
             isAnimatingText = false
         }
     }
